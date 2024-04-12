@@ -21,7 +21,15 @@
             width: 15%;
         }
         
+        #output{
+            background-color: black;
+            width: fit-content;
+            color: #fff;
+        }
     </style>
+    <script>
+        x = (Math.round(100 * 0.018)).toFixed(2);
+    </script>
 </head>
 <body>
     <div class="container-fluid mt-5">
@@ -31,9 +39,9 @@
                 document.write("The equivalent amount of 100 pesos in US Dollar is")
             </script>
         </div>
-        <div class="container mt-4 mb-4">
+        <div class="container mt-4 mb-4" id="output">
             <script>
-                document.write("<kbd>$1.77</kbd>")
+                document.write(x)
             </script>
         </div>
         <div class="container">
